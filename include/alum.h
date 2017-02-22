@@ -5,7 +5,7 @@
 ** Login   <shielder@epitech.net>
 ** 
 ** Started on  Tue Feb 14 13:49:20 2017 Maxime PICOT
-** Last update Wed Feb 22 16:02:45 2017 Maxime PICOT
+** Last update Thu Feb 23 00:37:53 2017 Maxime PICOT
 */
 
 #ifndef ALUM_H_
@@ -41,6 +41,7 @@ char    *my_memset(char *tab, char c, int size);
 char	*my_strdup(char	*str);
 
 char	**create_map(int size);
+char	**ia_cheats(char **map, int line, int size);
 char	**fill_map(int size);
 char	**add_alums(char **map, int size);
 char	**map_cpy(char **map);

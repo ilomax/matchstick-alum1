@@ -5,7 +5,7 @@
 ## Login   <shielder@epitech.net>
 ##
 ## Started on  Mon Nov 21 09:49:22 2016 Maxime PICOT
-## Last update Wed Feb 22 16:03:04 2017 Maxime PICOT
+## Last update Thu Feb 23 00:35:31 2017 Maxime PICOT
 ##
 
 COMP	=	gcc
@@ -13,6 +13,7 @@ COMP	=	gcc
 SRC	=	src/add_alums.c		\
 		src/error.c		\
 		src/get_next_line.c	\
+		src/bamboozled.c	\
 		src/game.c		\
 		src/ia.c		\
 		src/my_putnbr.c		\
@@ -26,7 +27,7 @@ CFLAGS	=	-I./include/ -Wall -Wextra -W -g
 
 LDLIBS	=	-L./lib/my
 
-LDFLAGS	=	
+LDFLAGS	=	-lncurses
 
 OBJ	=	$(SRC:src/%.c=obj/%.o)
 

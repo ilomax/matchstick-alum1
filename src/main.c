@@ -5,9 +5,10 @@
 ** Login   <shielder@epitech.net>
 ** 
 ** Started on  Mon Feb 13 17:37:25 2017 Maxime PICOT
-** Last update Wed Feb 22 18:06:41 2017 Maxime PICOT
+** Last update Thu Feb 23 00:12:08 2017 Maxime PICOT
 */
 
+#include <ncurses.h>
 #include <unistd.h>
 #include "alum.h"
 
