@@ -5,7 +5,7 @@
 ** Login   <shielder@epitech.net>
 ** 
 ** Started on  Mon Feb 13 17:37:25 2017 Maxime PICOT
-** Last update Wed Feb 22 15:58:37 2017 Maxime PICOT
+** Last update Wed Feb 22 18:06:41 2017 Maxime PICOT
 */
 
 #include <unistd.h>
@@ -17,14 +17,14 @@ int	game_loop(char **map, int size, int limit)
     {
       if ((map = my_turn(size, limit, map)) == NULL)
 	return (0);
-      if ((check_win(map)) == 1)
+      if ((check_win(map)) == 0)
 	{
 	  my_putstr("You lost, too bad...\n");
 	  return (2);
 	}
       if ((map = ia_turn(map, size, limit)) == NULL)
 	return (0);
-      if ((check_win(map)) == 1)
+      if ((check_win(map)) == 0)
 	{
 	  my_putstr("I lost... snif... but I'll get you next time!!\n");
 	  return (1);

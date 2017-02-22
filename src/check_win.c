@@ -5,7 +5,7 @@
 ** Login   <shielder@epitech.net>
 ** 
 ** Started on  Tue Feb 21 18:08:47 2017 Maxime PICOT
-** Last update Tue Feb 21 19:17:25 2017 Maxime PICOT
+** Last update Wed Feb 22 18:07:07 2017 Maxime PICOT
 */
 
 #include <unistd.h>
@@ -24,9 +24,9 @@ int	check_win(char **map)
       i++;
     }
   if (res == 0)
-    return (1);
-  else if (res > 0)
     return (0);
+  else if (res > 0)
+    return (res);
   else
-    return (84);
+    return (-1);
 }

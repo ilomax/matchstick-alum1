@@ -5,7 +5,7 @@
 ** Login   <shielder@epitech.net>
 ** 
 ** Started on  Sat Feb 18 19:33:22 2017 Maxime PICOT
-** Last update Wed Feb 22 16:04:25 2017 Maxime PICOT
+** Last update Wed Feb 22 18:24:13 2017 Maxime PICOT
 */
 
 #include <unistd.h>
@@ -72,7 +72,10 @@ int	get_matches_count(int limit, char *line, int size, t_game *game)
       if (game->cnt != 0)
 	return (game->cnt);
       else
-	my_putstr("Matches: ");
+	{
+	  my_putstr("Matches: ");
+	  game->cnt = 0;
+	}
     }
   return (-1);
 }

@@ -5,7 +5,7 @@
 ** Login   <shielder@epitech.net>
 ** 
 ** Started on  Mon Feb 20 13:12:19 2017 Maxime PICOT
-** Last update Wed Feb 22 16:00:14 2017 Maxime PICOT
+** Last update Wed Feb 22 18:27:22 2017 Maxime PICOT
 */
 
 #include <stdlib.h>
@@ -33,7 +33,10 @@ char	**ia_turn(char **map, int size, int limit)
     line = random_gen(1, (size + 1));
   while ((matches = random_gen(1, (limit + 1))) > count_matches(map[line]))
     matches = random_gen(1, (limit + 1));
-  new_map = rmv_matches(map, line, matches, size);
+  if ((check_win(map)) == 2)
+    new_map = rmv_matches(map, line, 1, size);
+  else
+    new_map = rmv_matches(map, line, matches, size);
   my_putstr("IA removed ");
   my_putnbr(matches);
   my_putstr(" match(es) from line ");
