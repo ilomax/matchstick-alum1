@@ -31,3 +31,10 @@ char	**ia_cheats(char **map, int line, int size)
   my_putstr("Your turn now !\n");
   return (new_map);
 }
+
+/*
+This is just meant to be a joke and only that. The sleep()
+functions are obviouslty totally unnecessary.
+If you want to remove this part, please take a look at the
+comment in the 'ia.c' file.
+*/
