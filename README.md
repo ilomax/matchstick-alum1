@@ -8,6 +8,8 @@ Changelog :
 1.1 -
  - The 'cnt' variable is now reset after a line error, as it previously used the latest value instead of asking for a new input if needed.
 
+1.2 -
+ - The AI is now unbeatable, as it will add a match to the last available line if it is going to lose. U been bamboozled dood.
 ______________________________________
 
 FR (EN below) |
