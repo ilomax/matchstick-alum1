@@ -44,7 +44,7 @@ char	**ia_turn(char **map, int size, int limit)
     matches = random_gen(1, (limit + 1));
   if ((check_win(map)) == 2)
     new_map = rmv_matches(map, line, 1, size);
-  else if ((check_win(map)) == 1) // you can remove this to make the game winable
+  else if ((check_win(map)) == 1) // you can remove all this 'else if' block to make the game winnable
     {                             // and so the AI will stop cheating !
       new_map = ia_cheats(map, line, size);
       display_map(new_map);
