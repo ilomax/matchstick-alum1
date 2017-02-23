@@ -27,7 +27,7 @@ CFLAGS	=	-I./include/ -Wall -Wextra -W -g
 
 LDLIBS	=	-L./lib/my
 
-LDFLAGS	=	-lncurses
+LDFLAGS	=
 
 OBJ	=	$(SRC:src/%.c=obj/%.o)
 
